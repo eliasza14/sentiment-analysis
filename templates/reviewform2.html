@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Hello bro{% endblock %}
+
+{%block content %}
+<h2>Please enter your movie review:</h2>
+{% from "_formhelpers.html" import render_field %}
+<form method=post action="/results">
+
+    <div class="form-floating">
+        <dl>
+            {{ render_field(form.moviereview, class='form-control', placeholder='Write down your thoughts here...') }}
+    
+            <!-- {{ render_field(form.moviereview) }} -->
+            </dl>
+      </div>
+      <!-- <input type=submit value='Submit review' name='submit_btn'> -->
+     
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  {% endblock %}
+
+
