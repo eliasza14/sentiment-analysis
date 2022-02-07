@@ -4,5 +4,4 @@ Flask-Bootstrap==3.3.7.1
 Flask-WTF==1.0.0
 numpy== 1.19.2
 joblib==1.0.1
-nltk==3.6.7
 scikit-learn==1.0.1
